@@ -1,9 +1,9 @@
 # For seth
 
-1. Open VSCode and Click Source Control on the left sidebar.
+1. Open VSCode and Click Source Control (button below search) on the left sidebar.
 2. If it asks to download "Git SCM", click the button and install using default settings (press next a bunch of times until it closes).
-3. Restart VSCode after Git SCM has installed, then go back to Source Control.
-4. If you installed Git SCM correctly, it should say "Clone Repository".
+3. Restart VSCode after Git SCM has installed, then go back to Source Control (button below search!!!!!!!!).
+4. If you installed Git SCM correctly, it should say "Clone Repository". If not, msg me on snap: `tygerxqt`
 5. Click "Clone from GitHub"
 6. Then select your final project repo.
 7. It should ask you where you want to save your project (istg don't put it in your downloads folder or somewhere that will be easily lost).
