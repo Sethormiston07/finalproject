@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
+import NumberRange from "@/components/NumberInput";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +25,13 @@ export default function Home() {
         width: "100%",
         alignItems: "center"
       }}>
-      <Button colorScheme='blue'>Button</Button>
+       <NumberRange />
+            <Button style={{
+                color: "black"
+            }} colorScheme='whatsapp'><b>
+                    Add to cart
+                </b>
+            </Button>
       </main>
     </>
   );
