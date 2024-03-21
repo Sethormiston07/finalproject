@@ -9,3 +9,10 @@
 7. It should ask you where you want to save your project (istg don't put it in your downloads folder or somewhere that will be easily lost).
 8. Open a terminal, and run `npm install` to install packages.
 9. Then run `npm run dev` to start your development server.
+
+## Other info
+
+Database URL: `https://golf-groovy.pockethost.io/_`
+[NextJS](https://nextjs.org) is the front-end framework.
+[React](https://react.dev) is the UI library to build components.
+[Chakra UI](https://chakra-ui.com) is your UI library.
