@@ -12,10 +12,10 @@
 
 ## Other info
 
-Database URL: `https://golf-groovy.pockethost.io/_`
+Database URL: `https://golf-groovy.pockethost.io/_`  
 [NextJS](https://nextjs.org) is the front-end framework.
-[React](https://react.dev) is the UI library to build components.
-[Chakra UI](https://chakra-ui.com) is your UI library.
+[React](https://react.dev) is the UI library to build components.  
+[Chakra UI](https://chakra-ui.com) is your UI library.  
 
 For when Git asks for `git.email` and `git.name`:
 - `git config --global user.email "sethormiston@icloud.com"`
