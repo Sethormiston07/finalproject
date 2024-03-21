@@ -6,6 +6,7 @@ import { Button } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
 import NumberRange from "@/components/NumberInput";
 import { Box } from "@chakra-ui/react"
+import BackgroundColour from "@/components/BackgroundColour";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,8 +21,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <BackgroundColour/>
       <main style={{ 
-        backgroundColor: "black",
         display: "flex",
         flexDirection: "row",
         width: "100%",
