@@ -11,8 +11,7 @@ import PocketBase from 'pocketbase';
 
 
 const inter = Inter({ subsets: ["latin"] });
-const pb = new PocketBase("YOUR_POCKETBASE_URL");
-
+const pb = new PocketBase("https://golf-groovy.pockethost.io/_");
 const [products, setProducts] = useState([]);
 
 useEffect(() => {
