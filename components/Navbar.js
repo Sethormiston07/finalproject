@@ -15,9 +15,6 @@ export default function Navbar() {
                 <a href="/help">
                     <p>Help</p>
                 </a>
-                <a href="/about">
-                    <p>About</p>
-                </a>
             </nav>
         </>
     )
