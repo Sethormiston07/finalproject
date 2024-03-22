@@ -6,6 +6,8 @@ import { Button } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
 import NumberRange from "@/components/NumberInput";
 import { Box } from "@chakra-ui/react"
+import { useEffect, useState } from 'react';
+import PocketBase from 'pocketbase';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -45,6 +47,12 @@ export default function Home() {
                     Add to cart
                 </b>
             </Button>
+            {products.map((product, index) => (
+        <div key={index}>
+          <h1>{product.name}</h1>
+          <p>{product.description}</p>
+        </div>
+        ))}
       </main>
     </>
   );
