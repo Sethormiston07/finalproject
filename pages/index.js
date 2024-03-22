@@ -9,7 +9,18 @@ import { Box } from "@chakra-ui/react"
 
 
 const inter = Inter({ subsets: ["latin"] });
+const pb = new PocketBase("YOUR_POCKETBASE_URL");
 
+const [products, setProducts] = useState([]);
+
+useEffect(() => {
+    async function getProducts() {
+        const results = await pb.collections("products").getFullList();
+        setProducts(results);
+    }
+
+    getProducts();
+});
 export default function Home() {
   return (
     <>
