@@ -5,10 +5,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
-      <ChakraProvider>
+      <body style={{backgroundColor:"green"}}>
         <Main />
-        </ChakraProvider>
         <NextScript />
       </body>
     </Html>
