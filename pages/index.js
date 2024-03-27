@@ -11,6 +11,7 @@ import PocketBase from 'pocketbase'
 
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -54,6 +55,8 @@ export default function Home() {
                       Add to cart
                     </b>
                   </Button>
+                  <Button colorScheme='blue'>Buy with shop pay</Button>
+                  <Text style={styles.underline}>More payment options</Text>
                 </div>
               )
             })}
