@@ -8,6 +8,7 @@ import NumberRange from "@/components/NumberInput";
 import { Box } from "@chakra-ui/react"
 import { useState, useEffect } from "react";
 import PocketBase from 'pocketbase'
+import { Text } from "@chakra-ui/react";
 
 
 
@@ -56,9 +57,14 @@ export default function Home() {
                     </b>
                   </Button>
                   <Button colorScheme='blue'>Buy with shop pay</Button>
-                  <Text style={styles.underline}>More payment options</Text>
+                  <Text style={{
+                    styles: "underline"
+                  }}>
+                      More payment options
+                  </Text>
                 </div>
               )
+              
             })}
           </>
         ) : (
