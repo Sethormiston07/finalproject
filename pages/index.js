@@ -5,22 +5,23 @@ import styles from "@/styles/Home.module.css";
 import { Button } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
 import NumberRange from "@/components/NumberInput";
-import { Box } from "@chakra-ui/react"
-import { useEffect, useState } from 'react';
+import { useEffect, useState} from 'react';
 import PocketBase from 'pocketbase';
+import { Box } from "@chakra-ui/react"
 
 
 const inter = Inter({ subsets: ["latin"] });
-const pb = new PocketBase("https://golf-groovy.pockethost.io/_");
-const [products, setProducts] = useState([]);
+const pb = new PocketBase("https://golf-groovy.pockethost.io");
 
+const [products, setProducts] = useState([]);
 useEffect(() => {
     async function getProducts() {
         const results = await pb.collections("products").getFullList();
-        setProducts(results);
+        setProducts(results);l
     }
 
     getProducts();
+
 });
 export default function Home() {
   return (
