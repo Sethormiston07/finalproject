@@ -8,8 +8,6 @@ import NumberRange from "@/components/NumberInput";
 import { useEffect, useState} from 'react';
 import PocketBase from 'pocketbase';
 import { Box } from "@chakra-ui/react"
-import { useState, useEffect } from "react";
-import PocketBase from 'pocketbase'
 import { Text } from "@chakra-ui/react";
 
 
