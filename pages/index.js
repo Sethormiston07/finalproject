@@ -9,7 +9,6 @@ import { useEffect, useState} from 'react';
 import PocketBase from 'pocketbase';
 import { Box } from "@chakra-ui/react"
 import { Text } from "@chakra-ui/react";
-import {setProducts} from "@chakra-ui/react";
 
 
 
