@@ -15,6 +15,7 @@ import { Text } from "@chakra-ui/react";
 
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 const pb = new PocketBase("https://golf-groovy.pockethost.io");
 
