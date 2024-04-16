@@ -47,6 +47,12 @@ export default function Home() {
         ) : (
           <p style={{ fontWeight: 700, fontSize: "2rem" }}>Loading...</p>
         )}
+         <p style={{maxWidth:'400px',paddingTop:'4rem',paddingLeft:'2rem'}} >
+
+        Golf Groovy Micro Fibre Towel with clip attachment.
+
+Super absorbent, perfect for cleaning at golf.
+         </p>
       </main>
     </>
   );

@@ -19,7 +19,6 @@ export default function ProductCard({ product }) {
                     </a>
                 <Link href='https://buy.stripe.com/test_eVaaHg4G52vcdhK5kk'>
                     <Button colorScheme='blue'>Buy now</Button></Link>
-                <Text as='a' target='_blank' style={{ textDecoration: "underline" }} href='/addtocart'>More payment options</Text>
             </div>
         </>
     )

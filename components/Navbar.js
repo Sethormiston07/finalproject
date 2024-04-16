@@ -14,7 +14,7 @@ export default function Navbar() {
                 justifyContent: "space-between",
                 padding: "2rem"
             }}>
-                <div style={{ display: "flex", flexDirection: "row", gap: "2rem" }}>
+                <div style={{ display: "flex", flexDirection: "row", gap: "2rem", fontWeight:700,fontSize:25 }}>
 
                     <a href="/">
                         <p>Home</p>

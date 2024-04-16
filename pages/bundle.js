@@ -46,7 +46,25 @@ export default function Home() {
           </>
         ) : (
           <p style={{ fontWeight: 700, fontSize: "2rem" }}>Loading...</p>
-        )}
+          )}
+          <p style={{maxWidth:'400px',paddingTop:'4rem',paddingLeft:'2rem'}} >
+
+          Golf Groovy's two best sellers in a discounted bundle!
+
+Golf Groovy know's the importance of a clean club as a dirty club leads to reduced ball control and spin.
+
+Our Club Cleaner offers a effective and gentle clean on your golf clubs. The firm bristles help to remove dirt from your clubs, improving their performance.
+
+The lightweight and portable device magnetically attaches to the clip meaning you can easily take this off and clean your club quickly and efficiently after your shot. Groovy also comes with a plastic clip which is recommended for carry bags
+
+The water pump feature with the strong bristles helps you remove dirt quicker and easier than other club cleaners!
+
+ Try it out for yourself or Golf Groovy makes a perfect gift for any golfer who takes their game seriously.
+
+Golf Groovy Micro Fibre Towel with clip attachment.
+
+Super absorbent, perfect for cleaning at golf.
+          </p>
       </main>
     </>
   );
