@@ -5,16 +5,27 @@ import styles from "@/styles/Home.module.css";
 import { Button } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
 import NumberRange from "@/components/NumberInput";
+import { useEffect, useState} from 'react';
+import PocketBase from 'pocketbase';
 import { Box } from "@chakra-ui/react"
-import { useState, useEffect } from "react";
-import PocketBase from 'pocketbase'
 import { Text } from "@chakra-ui/react";
 
 
 
 
 const inter = Inter({ subsets: ["latin"] });
+const pb = new PocketBase("https://golf-groovy.pockethost.io");
 
+const [products, setProducts] = useState([]);
+useEffect(() => {
+    async function getProducts() {
+        const results = await pb.collections("products").getFullList();
+        setProducts(results);l
+    }
+
+    getProducts();
+
+});
 export default function Home() {
   const pb = new PocketBase("https://golf-groovy.pockethost.io")
   const [products, setProducts] = useState([])
@@ -42,6 +53,19 @@ export default function Home() {
         width: "100%",
         alignItems: "center",
       }}>
+       <NumberRange />
+            <Button style={{
+                color: "black"
+            }} colorScheme='whatsapp'><b>
+                    Add to cart
+                </b>
+            </Button>
+            {products.map((product, index) => (
+        <div key={index}>
+          <h1>{product.name}</h1>
+          <p>{product.description}</p>
+        </div>
+        ))}
         {products.length >= 1 ? (
           <>
             {products.map((item) => {
