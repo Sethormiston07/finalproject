@@ -57,11 +57,7 @@ export default function Home() {
                     </b>
                   </Button>
                   <Button colorScheme='blue'>Buy with shop pay</Button>
-                  <Text style={{
-                    styles: "underline"
-                  }}>
-                      More payment options
-                  </Text>
+                  <Text as='a' target='_blank' variant='outline' href='https://chakra-ui.com'>More payment options</Text>
                 </div>
               )
               
