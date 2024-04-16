@@ -1,5 +1,7 @@
 import NumberRange from "./NumberInput"
-import { Button,Text } from "@chakra-ui/react"
+import { Button, Text } from "@chakra-ui/react"
+import Link from "next/link"
+
 
 export default function ProductCard({ product }) {
     return (
@@ -9,14 +11,15 @@ export default function ProductCard({ product }) {
                 <img width={400} height={400} src={`https://golf-groovy.pockethost.io/api/files/${product.collectionId}/${product.id}/${product.image[0]}`} />
                 <NumberRange />
                 <h5>£{product.price}</h5>
-                <Button style={{
-                    color: "black"
-                }} colorScheme='whatsapp'><b>
+                <a href='/addtocart'><Button style={{ color: "black", }} colorScheme='whatsapp'>
+                    <b>
                         Add to cart
                     </b>
                 </Button>
-                <Button colorScheme='blue'>Buy with shop pay</Button>
-                <Text as='a' target='_blank' style={{ textDecoration: "underline" }} href='/payment'>More payment options</Text>
+                    </a>
+                <Link href='https://buy.stripe.com/test_eVaaHg4G52vcdhK5kk'>
+                    <Button colorScheme='blue'>Buy now</Button></Link>
+                <Text as='a' target='_blank' style={{ textDecoration: "underline" }} href='/addtocart'>More payment options</Text>
             </div>
         </>
     )

@@ -47,7 +47,7 @@ export default function Home() {
         ) : (
           <p style={{ fontWeight: 700, fontSize: "2rem" }}>Loading...</p>
         )}
-        <p>Golf Groovy know's the importance of a clean club as a dirty club leads to reduced ball control and spin.
+        <p style={{maxWidth:'400px',paddingTop:'4rem',paddingLeft:'2rem'}}>Golf Groovy know's the importance of a clean club as a dirty club leads to reduced ball control and spin.
 
 Elevate Your Golf Game: Keep your clubs pristine with our golf club cleaner and improve performance with clean grooves
 
