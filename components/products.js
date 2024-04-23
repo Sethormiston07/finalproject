@@ -7,11 +7,11 @@ export default function ProductCard({ product }) {
     return (
         <>
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-                <h5 style={{ fontSize: "2rem", fontWeight: 700 }}>{product.name}</h5>
+                <h5 style={{color:'white', fontSize: "2rem", fontWeight: 700 }}>{product.name}</h5>
                 <img width={400} height={400} src={`http://localhost:8090/api/files/${product.collectionId}/${product.id}/${product.image[0]}`} />
                 <NumberRange />
                 <h5>£{product.price}</h5>
-                <a href='/addtocart'><Button style={{ color: "black", }} colorScheme='whatsapp'>
+                <a href='/addtocart'><Button style={{ color: 'white', }} colorScheme='whatsapp'>
                     <b>
                         Add to cart
                     </b>

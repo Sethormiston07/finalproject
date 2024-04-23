@@ -16,20 +16,20 @@ export default function Navbar() {
             }}>
                 <div style={{ display: "flex", flexDirection: "row", gap: "2rem", fontWeight:700,fontSize:25 }}>
 
-                    <a href="/">
-                        <p>Home</p>
+                    <a style={{color:'white'}} href="/">
+                        Home
                     </a>
-                    <a href="/cleaner">
-                        <p>Golf groovy cleaner</p>
+                    <a style={{color:'white'}} href="/cleaner">
+                        Golf groovy cleaner
                     </a>
-                    <a href="/bundle">
-                        <p>Golf Groovy Club Cleaner & Towel Bundle</p>
+                    <a style={{color:'white'}} href="/bundle">
+                        Golf Groovy Club Cleaner & Towel Bundle
                     </a>
-                    <a href="/towel">
-                        <p>Golf Groovy Towel</p>
+                    <a style={{color:'white'}}href="/towel">
+                        Golf Groovy Towel
                     </a>
-                    <a href="/help">
-                        <p>Help</p>
+                    <a style={{color:'white'}} href="/help">
+                        Help
                     </a>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "2rem" }}>
