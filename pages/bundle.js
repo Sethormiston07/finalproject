@@ -13,7 +13,7 @@ import ProductCard from "@/components/products";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const pb = new PocketBase("https://golf-groovy.pockethost.io")
+  const pb = new PocketBase("http://localhost:8090")
 
   const [product, setProduct] = useState(null)
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <b>Golf groovy</b>
+      <a href='/'><img src='logo.avif'></img></a>
       <main style={{
         display: "flex",
         width: "100%",

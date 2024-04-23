@@ -8,7 +8,7 @@ export default function ProductCard({ product }) {
         <>
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
                 <h5 style={{ fontSize: "2rem", fontWeight: 700 }}>{product.name}</h5>
-                <img width={400} height={400} src={`https://golf-groovy.pockethost.io/api/files/${product.collectionId}/${product.id}/${product.image[0]}`} />
+                <img width={400} height={400} src={`http://localhost:8090/api/files/${product.collectionId}/${product.id}/${product.image[0]}`} />
                 <NumberRange />
                 <h5>£{product.price}</h5>
                 <a href='/addtocart'><Button style={{ color: "black", }} colorScheme='whatsapp'>
