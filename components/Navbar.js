@@ -28,8 +28,8 @@ export default function Navbar() {
                     <a style={{color:'white'}}href="/towel">
                         Golf Groovy Towel
                     </a>
-                    <a style={{color:'white'}} href="/help">
-                        Help
+                    <a style={{color:'white'}} href="/Contact">
+                        Contact Us
                     </a>
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", gap: "2rem" }}>
