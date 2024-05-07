@@ -13,7 +13,7 @@ import ProductCard from "@/components/products";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const pb = new PocketBase("http://localhost:8090")
+  const pb = new PocketBase("https://golf-groovy.pockethost.io")
 
   const [product, setProduct] = useState(null)
   useEffect(() => {

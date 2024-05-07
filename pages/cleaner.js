@@ -13,7 +13,7 @@ import ProductCard from "@/components/products";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const pb = new PocketBase("http://localhost:8090")
+  const pb = new PocketBase("https://golf-groovy.pockethost.io")
 
   const [product, setProduct] = useState(null)
   useEffect(() => {
@@ -24,6 +24,15 @@ export default function Home() {
     }
 
     getProduct();
+
+    const query = new URLSearchParams(window.location.search);
+    if (query.get('success')) {
+      console.log('Order placed! You will receive an email confirmation.');
+    }
+
+    if (query.get('canceled')) {
+      console.log('Order canceled -- continue to shop around and checkout when you’re ready.');
+    }
   }, []);
 
   return (
